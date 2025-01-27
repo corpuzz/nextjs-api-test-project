@@ -9,7 +9,7 @@ export default function Page() {
     // const result = await fetch('/api/getData')
     const result = await fetch('https://nxttt.vercel.app/api/generateQoute')
     const data = await result.json()
-    setQoute(data.data)
+    setQoute(data.qoute)
   }
 
   return (
